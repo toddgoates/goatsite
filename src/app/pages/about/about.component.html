@@ -1,0 +1,40 @@
+<!--
+About:  
+- Flattering/professional photo of me
+- One small paragraph about me
+- Resume of work experience/education/volunteering
+- Link to download PDF of resume
+-->
+
+<div class="container">
+  <h1>About</h1>
+  <hr>
+  <div class="row">
+    <div class="col-md-4">
+      <img src="/assets/images/portrait.jpg" class="img-fluid portrait">
+      <p>I'm Todd Goates. I'm a Full-Stack Developer, artist, wanna-be writer, daydreamer, outdoor enthusiast, synth-lover, cat whisperer, and most importantly, a husband and father. I am passionate about programming and keeping up with the latest technology.</p>
+    </div>
+    <div class="col-md-4">
+      <h3>Work Experience</h3>
+      <div *ngFor="let work of workExp">
+        <h5>{{ work.company }}</h5>
+        <p class="text-muted">{{ work.title }} </p>
+        <p class="text-muted"><small>({{ work.years }})</small></p>
+        <br>
+        <hr>
+        <br>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h3>Education</h3>
+      <div>
+        <h5>Utah Valley University</h5>
+        <p class="text-muted">Bachelor's Degree in Digital Media</p>
+        <p class="text-muted"><small>(2007 - 2014)</small></p>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a href="/assets/files/ToddGoatesResume.pdf" class="btn btn-lg btn-success">Download My Resume</a>
+  </div>
+</div>

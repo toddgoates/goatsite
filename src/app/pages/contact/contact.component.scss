@@ -1,0 +1,20 @@
+$linkedin: #007BB5;
+$github: #25292F;
+
+.card {
+    li {
+        margin-bottom: 1rem;
+
+        a {
+            transition: ease-in-out 0.3s color;
+        }
+
+        a.linkedin:hover {
+            color: $linkedin !important;
+        }
+
+        a.github:hover {
+            color: $github !important;
+        }
+    }
+}

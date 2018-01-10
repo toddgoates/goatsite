@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>Projects</h1>
+  <hr>
+  <div class="row">
+    <div class="col-sm-12" *ngFor="let project of projects">
+      <div class="card">
+        <img src="/assets/images/projects/{{ project.image }}" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">{{ project.name }}</h5>
+          <p class="card-text">{{ project.description }}</p>
+          <p class="card-text"><strong>Technologies Used:</strong></p>
+          <span class="badge badge-light" *ngFor="let tech of project.technologies">
+            {{ tech }}
+          </span>
+            <hr>
+          <a href="{{ project.link }}" target="_blank" class="btn btn-success">
+            Visit Site
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
