@@ -24,14 +24,14 @@ npm install
 
 ### Development server
 
-Run `ng serve -o` for a dev server. This will open up a tab in your browser to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve -o` to start up a dev server. This will automatically open up a tab in your browser to `http://localhost:4200/`. The app will instantly reload in your browser if you change any of the source files.
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
 ## Deployment
-TODO:  Instructions to deploy to AWS will go here...
+TODO:  Coming soon!
 
 ## License
 This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details
