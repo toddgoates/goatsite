@@ -4,7 +4,7 @@
   <div class="row">
     <div class="col-md-7 col-lg-8">
       <p>Ready to get started on a project? I'm always interested in talking to other creatives and working on new challenges. Feel free to drop me a line or two.</p>
-      <form *ngIf="!msgSent" (ngSubmit)="fakeSubmit()">
+      <form *ngIf="!msgSent" (ngSubmit)="submitForm()">
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" class="form-control" [(ngModel)]="contact.name" required>
@@ -22,7 +22,14 @@
           <textarea id="message" name="message" class="form-control" rows="7" [(ngModel)]="contact.message" required></textarea>
         </div>
         <div class="form-group">
-          <button type="submit" class="btn btn-lg btn-success">Send Message</button>
+          <button type="submit" class="btn btn-lg btn-success" [attr.disabled]="msgSending ? 'disabled' : null">
+            <span *ngIf="msgSending">
+                <i class="fas fa-fw fa-spinner fa-pulse"></i> Sending Message
+            </span>
+            <span *ngIf="!msgSending">
+              <i class="far fa-fw fa-envelope"></i> Send Message
+            </span>
+          </button>
         </div>
       </form>
       <div class="alert alert-success" *ngIf="msgSent">
@@ -31,8 +38,6 @@
       </div>
     </div>
     <div class="col-md-5 col-lg-4">
-      <pre>{{ contact | json }}</pre>
-      <br>
       <div class="card">
         <div class="card-header">Contact Info</div>
         <div class="card-body">

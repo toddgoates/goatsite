@@ -9,12 +9,12 @@
           <h5 class="card-title">{{ project.name }}</h5>
           <p class="card-text">{{ project.description }}</p>
           <p class="card-text"><strong>Technologies Used:</strong></p>
-          <span class="badge badge-light" *ngFor="let tech of project.technologies">
+          <span class="badge badge-secondary" *ngFor="let tech of project.technologies">
             {{ tech }}
           </span>
             <hr>
           <a href="{{ project.link }}" target="_blank" class="btn btn-success">
-            Visit Site
+            <i class="fas fa-share-square"></i> Visit Site
           </a>
         </div>
       </div>

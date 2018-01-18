@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ContactService } from '../../contact.service';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -7,6 +8,7 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
+  msgSending: boolean;
   msgSent: boolean;
   contact: {
     name: string,
@@ -15,21 +17,28 @@ export class ContactComponent {
     message: string
   };
 
-  constructor(private titleService: Title) {
-    titleService.setTitle('Todd Goates | Contact');
+  constructor(
+    private titleService: Title,
+    private contactService: ContactService) {
+      titleService.setTitle('Todd Goates | Contact');
 
-    this.msgSent = false;
-    this.contact = {
-      name: '',
-      email: '',
-      phone: '',
-      message: ''
-    };
+      this.msgSending = false;
+      this.msgSent = false;
+      this.contact = {
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+      };
   }
 
-  fakeSubmit() {
-    this.msgSent = true;
-    console.dir(this.contact);
+  submitForm() {
+    this.msgSending = true;
+    this.contactService.createContact(this.contact)
+      .subscribe(() => {
+        this.msgSending = false;
+        this.msgSent = true;
+      });
   }
 
 }
