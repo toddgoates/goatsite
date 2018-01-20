@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { ContactService } from '../../contact.service';
 import { Title } from '@angular/platform-browser';
+import { Validator } from '@angular/forms';
+import { ContactService } from '../../contact.service';
 
 @Component({
   selector: 'app-contact',

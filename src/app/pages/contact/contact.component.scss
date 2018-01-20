@@ -1,5 +1,10 @@
 $linkedin: #007BB5;
 $github: #25292F;
+$error: rgb(235, 55, 52);
+
+.ng-touched.ng-invalid:not(form) {
+    border: 1px solid $error;
+}
 
 .card {
     li {
