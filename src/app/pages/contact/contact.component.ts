@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Validator } from '@angular/forms';
 import { ContactService } from '../../contact.service';
+import { Contact } from './../../classes/contact';
 
 @Component({
   selector: 'app-contact',
@@ -11,12 +12,7 @@ import { ContactService } from '../../contact.service';
 export class ContactComponent {
   msgSending: boolean;
   msgSent: boolean;
-  contact: {
-    name: string,
-    email: string,
-    phone: string,
-    message: string
-  };
+  contact: Contact;
 
   constructor(
     private titleService: Title,

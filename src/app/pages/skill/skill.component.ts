@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { Skill } from './../../classes/skill';
 
 @Component({
   selector: 'app-skill',
@@ -9,7 +10,7 @@ import { Title } from '@angular/platform-browser';
 export class SkillComponent {
   devStartYear: number;
   yearsExp: number;
-  skills: {title: string, icon: string}[];
+  skills: Skill[];
 
   constructor(private titleService: Title) {
     titleService.setTitle('Todd Goates | Skills');

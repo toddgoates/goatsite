@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { Job } from './../../classes/job';
 
 @Component({
   selector: 'app-about',
@@ -7,11 +8,7 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
-  workExp: {
-    company: string,
-    title: string,
-    years: string
-  }[];
+  workExp: Job[];
 
   constructor(private titleService: Title) {
     titleService.setTitle('Todd Goates | About');

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { Project } from './../../classes/project';
 
 @Component({
   selector: 'app-project',
@@ -7,13 +8,7 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./project.component.scss']
 })
 export class ProjectComponent {
-  projects: {
-    name: string,
-    description: string,
-    image: string,
-    link: string,
-    technologies: [string]
-  }[];
+  projects: Project[];
 
   constructor(private titleService: Title) {
     titleService.setTitle('Todd Goates | Projects');
@@ -23,7 +18,8 @@ export class ProjectComponent {
         name: 'A Child\'s Hope Foundation',
         description: 'I helped redesign an outdated, static site into a responsive Drupal ' +
           'theme and created a system where users could create accounts and register for ' +
-          'upcoming events. I later built a donation payment processing page using Stripe.',
+          'upcoming events. I later built a donation payment processing page using Stripe. ' +
+          'Several years later, I assisted in migrating the site to a fresh WordPress theme.',
         image: 'achf.png',
         link: 'https://www.achildshopefoundation.org',
         technologies: [
