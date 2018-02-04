@@ -29,7 +29,7 @@ export class ContactComponent {
       };
   }
 
-  submitForm() {
+  submitForm(): void {
     this.msgSending = true;
     this.contactService.createContact(this.contact)
       .subscribe(() => {
