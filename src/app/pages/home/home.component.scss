@@ -12,8 +12,9 @@
     }
 
     .fa-heart {
-        transform-origin: center center;
         animation: heartbeat 0.8s ease-in-out infinite alternate;
+        color: #FF889C;
+        transform-origin: center center;
     }
 
     .btn {
