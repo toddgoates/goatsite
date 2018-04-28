@@ -15,6 +15,10 @@ export class NavbarComponent {
     router.events.subscribe( (event: Event) => {
       if (event instanceof NavigationEnd) {
         this.isCollapsed = true;
+        
+        // For logging page views with Google Analytics
+        (<any>window).ga('set', 'page', event.urlAfterRedirects);
+        (<any>window).ga('send', 'pageview');
       }
 
     });
