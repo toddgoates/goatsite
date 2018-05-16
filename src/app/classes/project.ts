@@ -3,5 +3,5 @@ export class Project {
     description: string;
     image: string;
     link: string;
-    technologies: [string];
+    technologies: string[];
 }
