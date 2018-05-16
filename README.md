@@ -28,7 +28,7 @@ Run `ng serve -o` to start up a dev server. This will automatically open up a ta
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `ng build --prod` to build a production-ready project. The build artifacts will be stored in the `dist/` directory.
 
 ## Deployment
 The easiest way to deploy the files to S3 is to use the [AWS CLI](https://aws.amazon.com/cli/). Once this has been installed on your system, you will need to set up an IAM user with access keys that has permissions to put objects on S3. To push your `dist/` directory to S3, run the following from the root of your project:
