@@ -14,10 +14,12 @@
           </span>
             <hr>
           <a href="{{ project.link }}" target="_blank" class="btn btn-success">
-            <i class="fas fa-share-square"></i> Visit Site
+            <i class="fas fa-share-square"></i> 
+            <span>{{ project.githubLink ? 'View Code' : 'View Site' }}</span>
           </a>
         </div>
       </div>
+      <br>
     </div>
   </div>
 </div>

@@ -3,5 +3,6 @@ export class Project {
     description: string;
     image: string;
     link: string;
+    githubLink: boolean;
     technologies: string[];
 }

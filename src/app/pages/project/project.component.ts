@@ -22,12 +22,27 @@ export class ProjectComponent {
           'Several years later, I assisted in migrating the site to a fresh WordPress theme.',
         image: 'achf.png',
         link: 'https://www.achildshopefoundation.org',
+        githubLink: false,
         technologies: [
           'Drupal',
           'Stripe',
           'LESS',
           'PHP',
           'jQuery'
+        ]
+      },
+      {
+        name: 'rock paper scissors',
+        description: 'A fun little project built with Vue.js to play Rock Paper Scissors against your browser',
+        image: 'rockpaperscissors.png',
+        link: 'https://github.com/toddgoates/rockpaperscissors',
+        githubLink: true,
+        technologies: [
+          'Vue.js',
+          'Moment.js',
+          'Chart.js',
+          'localStorage',
+          'Bootstrap'
         ]
       }
     ];
