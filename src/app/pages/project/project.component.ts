@@ -33,7 +33,10 @@ export class ProjectComponent {
       },
       {
         name: 'rock paper scissors',
-        description: 'A fun little project built with Vue.js to play Rock Paper Scissors against your browser',
+        description: 'A fun little project built with Vue.js to play Rock Paper Scissors against ' +
+          'your browser. The game is broken down to different Vue components. A history of your wins, ' +
+          'loses, and ties are recorded with timestamps. Your wins are graphed with Chart.js. Players ' +
+          'have the option to save progress and keep gameplay data in local storage.',
         image: 'rockpaperscissors.png',
         link: 'https://github.com/toddgoates/rockpaperscissors',
         githubLink: true,
@@ -41,7 +44,7 @@ export class ProjectComponent {
           'Vue.js',
           'Moment.js',
           'Chart.js',
-          'localStorage',
+          'Local Storage',
           'Bootstrap'
         ]
       }
