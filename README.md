@@ -1,5 +1,5 @@
 # GoatSite
-This is the personal portfolio website of Todd Goates and was built with Angular 6.x. It will be hosted on AWS and is designed from the ground up to be completely serverless.
+This is the personal portfolio website of Todd Goates and was built with Angular 7.x. It will be hosted on AWS and is designed from the ground up to be completely serverless.
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See the Deployment section below for notes on how to deploy the project to AWS.
