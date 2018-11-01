@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { Validator } from '@angular/forms';
 import { ContactService } from '../../contact.service';
 import { Contact } from './../../classes/contact';
 
@@ -9,24 +8,26 @@ import { Contact } from './../../classes/contact';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
   msgSending: boolean;
   msgSent: boolean;
   contact: Contact;
 
   constructor(
     private titleService: Title,
-    private contactService: ContactService) {
-      titleService.setTitle('Todd Goates | Contact');
+    private contactService: ContactService) { }
 
-      this.msgSending = false;
-      this.msgSent = false;
-      this.contact = {
-        name: '',
-        email: '',
-        phone: '',
-        message: ''
-      };
+  ngOnInit() {
+    this.titleService.setTitle('Todd Goates | Contact');
+
+    this.msgSending = false;
+    this.msgSent = false;
+    this.contact = {
+      name: '',
+      email: '',
+      phone: '',
+      message: ''
+    };
   }
 
   submitForm(): void {
@@ -37,5 +38,4 @@ export class ContactComponent {
         this.msgSent = true;
       });
   }
-
 }

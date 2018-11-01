@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Job } from './../../classes/job';
 
@@ -7,11 +7,13 @@ import { Job } from './../../classes/job';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit {
   workExp: Job[];
 
-  constructor(private titleService: Title) {
-    titleService.setTitle('Todd Goates | About');
+  constructor(private titleService: Title) { }
+
+  ngOnInit() {
+    this.titleService.setTitle('Todd Goates | About');
 
     this.workExp = [
       {
@@ -26,4 +28,5 @@ export class AboutComponent {
       }
     ];
   }
+
 }

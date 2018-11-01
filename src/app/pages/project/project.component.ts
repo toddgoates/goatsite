@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Project } from './../../classes/project';
 
@@ -7,11 +7,13 @@ import { Project } from './../../classes/project';
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.scss']
 })
-export class ProjectComponent {
+export class ProjectComponent implements OnInit {
   projects: Project[];
 
-  constructor(private titleService: Title) {
-    titleService.setTitle('Todd Goates | Projects');
+  constructor(private titleService: Title) { }
+
+  ngOnInit() {
+    this.titleService.setTitle('Todd Goates | Projects');
 
     this.projects = [
       {
