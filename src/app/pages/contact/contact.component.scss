@@ -1,31 +1,35 @@
-$linkedin: #007BB5;
-$github: #25292F;
+$linkedin: #007bb5;
+$github: #25292f;
 $error: rgb(235, 55, 52);
+input,
+textarea {
+  border-radius: 0;
+}
 
 .ng-touched.ng-invalid:not(form) {
-    border: 1px solid $error;
+  border: 1px solid $error;
 }
 
 .card {
-    li {
-        margin-bottom: 1rem;
+  li {
+    margin-bottom: 1rem;
 
-        a {
-            transition: ease-in-out 0.3s color;
-        }
-
-        a.linkedin:hover {
-            color: $linkedin !important;
-        }
-
-        a.github:hover {
-            color: $github !important;
-        }
+    a {
+      transition: ease-in-out 0.3s color;
     }
+
+    a.linkedin:hover {
+      color: $linkedin !important;
+    }
+
+    a.github:hover {
+      color: $github !important;
+    }
+  }
 }
 
 @media only screen and (max-width: 767px) {
-    .card {
-        margin-top: 2rem;
-    }
+  .card {
+    margin-top: 2rem;
+  }
 }
