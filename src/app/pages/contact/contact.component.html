@@ -3,63 +3,41 @@
   <hr>
   <div class="row">
     <div class="col-md-7 col-lg-8">
-      <p>Ready to get started on a project? I'm always interested in talking to other creatives and working on new challenges. Feel free to drop me a line or two.</p>
+      <p>Ready to get started on a project? I'm always interested in talking to other creatives and working on new
+        challenges. Feel free to drop me a line or two.</p>
       <form #contactForm="ngForm" *ngIf="!msgSent" (ngSubmit)="submitForm()">
         <div class="form-group">
           <label for="name">Name</label>
-          <input type="text" 
-                 id="name" 
-                 name="name" 
-                 class="form-control" 
-                 [(ngModel)]="contact.name" 
-                 #name="ngModel"
-                 required>
+          <input type="text" id="name" name="name" class="form-control" [(ngModel)]="contact.name" #name="ngModel"
+            required>
           <div [hidden]="name.valid || name.pristine" class="form-text text-danger">
             Please enter your name
           </div>
         </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" 
-                 id="email" 
-                 name="email" 
-                 class="form-control" 
-                 [(ngModel)]="contact.email" 
-                 #email="ngModel"
-                 email
-                 required>
+          <input type="email" id="email" name="email" class="form-control" [(ngModel)]="contact.email" #email="ngModel"
+            email required>
           <div [hidden]="email.valid || email.pristine" class="form-text text-danger">
             Please enter a valid email
           </div>
         </div>
         <div class="form-group">
           <label for="phone">Phone <small class="text-muted">(optional)</small></label>
-          <input type="tel" 
-                 id="phone" 
-                 name="phone" 
-                 class="form-control" 
-                 [(ngModel)]="contact.phone"
-                 #phone="ngModel">
+          <input type="tel" id="phone" name="phone" class="form-control" [(ngModel)]="contact.phone" #phone="ngModel">
         </div>
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea id="message" 
-                    name="message" 
-                    class="form-control" 
-                    rows="7" 
-                    [(ngModel)]="contact.message"
-                    #message="ngModel" 
-                    required></textarea>
+          <textarea id="message" name="message" class="form-control" rows="7" [(ngModel)]="contact.message" #message="ngModel"
+            required></textarea>
           <div [hidden]="message.valid || message.pristine" class="form-text text-danger">
             Please enter a message
           </div>
         </div>
         <div class="form-group">
-          <button type="submit" 
-                  class="btn btn-lg btn-success" 
-                  [disabled]="msgSending || !contactForm.valid ? 'disabled' : null">
+          <button type="submit" class="btn btn-lg btn-success" [disabled]="msgSending || !contactForm.valid ? 'disabled' : null">
             <span *ngIf="msgSending">
-                <i class="fas fa-fw fa-spinner fa-pulse"></i> Sending Message
+              <i class="fas fa-fw fa-spinner fa-pulse"></i> Sending Message
             </span>
             <span *ngIf="!msgSending">
               <i class="far fa-fw fa-envelope"></i> Send Message

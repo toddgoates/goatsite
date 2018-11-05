@@ -1,40 +1,40 @@
 .bg-custom {
-    background-image: url('/assets/images/mountains.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 0;
-    height: 700px;
-    margin-bottom: 0;
-    text-align: center;
+  background-image: url("/assets/images/mountains.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0;
+  height: 700px;
+  margin-bottom: 0;
+  text-align: center;
 
-    h1, p.lead {
-        margin-bottom: 1.5rem;
-    }
+  h1,
+  p.lead {
+    margin-bottom: 1.5rem;
+  }
 
-    .fa-heart {
-        animation: heartbeat 0.8s ease-in-out infinite alternate;
-        color: #FF889C;
-        transform-origin: center center;
-    }
+  .fa-heart {
+    animation: heartbeat 0.8s ease-in-out infinite alternate;
+    color: #ff889c;
+    transform-origin: center center;
+  }
 
-    .btn {
-        margin: 1.25rem 0 0 0;
-    }
+  .btn {
+    margin: 1.25rem 0 0 0;
+  }
 }
 
 @media only screen and (max-width: 501px) {
-    h1 {
-        font-size: 2.15rem;
-        margin-bottom: 1.5rem;
-    }
+  h1 {
+    font-size: 2.15rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
-
 @keyframes heartbeat {
-    0% {
-        transform: scale(1.0);
-    }
-    100% {
-        transform: scale(1.5);
-    }
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
 }
