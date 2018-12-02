@@ -21,6 +21,7 @@ import { ErrorComponent } from "./pages/error/error.component";
 // Goatsite Services
 import { ContactService } from "./services/contact.service";
 import { SkillService } from "./services/skill.service";
+import { ProjectService } from "./services/project.service";
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { SkillService } from "./services/skill.service";
     ErrorComponent
   ],
   imports: [BrowserModule, FormsModule, HttpClientModule, AppRoutingModule],
-  providers: [ContactService, SkillService],
+  providers: [ContactService, SkillService, ProjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
