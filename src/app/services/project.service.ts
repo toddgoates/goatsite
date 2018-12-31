@@ -31,6 +31,18 @@ export class ProjectService {
       technologies: ["Wordpress", "MailChimp", "WooCommerce", "AWS", "MySQL"]
     },
     {
+      name: "Pocket Planetarium",
+      description:
+        "A fun project built with React to see how much you would weigh on different " +
+        "planets in the solar system. The application uses several small components: WeightForm, " +
+        "PlanetList, and Planet. The user's weight is kept in state and passed down to the children " +
+        "components. I'm using prop-types so that props passed to components are type-checked.",
+      image: "planetarium.png",
+      link: "https://github.com/toddgoates/pocket-planetarium",
+      githubLink: true,
+      technologies: ["React", "prop-types", "Bootstrap"]
+    },
+    {
       name: "rock paper scissors",
       description:
         "A fun little project built with Vue.js to play Rock Paper Scissors against " +
