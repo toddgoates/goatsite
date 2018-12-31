@@ -1,5 +1,7 @@
 # GoatSite
 
+[![CodeFactor](https://www.codefactor.io/repository/github/toddgoates/goatsite/badge)](https://www.codefactor.io/repository/github/toddgoates/goatsite)
+
 This is the personal portfolio website of Todd Goates and was built with Angular 7.x. It will be hosted on AWS and is designed from the ground up to be completely serverless.
 
 ## Getting Started
