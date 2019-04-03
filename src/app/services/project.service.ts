@@ -53,6 +53,18 @@ export class ProjectService {
       link: "https://github.com/toddgoates/rockpaperscissors",
       githubLink: true,
       technologies: ["Vue.js", "Moment.js", "Chart.js", "Local Storage", "Bootstrap"]
+    },
+    {
+      name: "Captain's Log",
+      description:
+        "Create your own Captain's Log in your browser with the HTML5 Speech Recognition API. " +
+        "Enable your browser's microphone and start speaking. The browser will then listen to you " +
+        "and transcribe your words in real time. I used CSS Grid to build the layout and some custom CSS " +
+        "to mimic the appearance of the Captain's Log on Star Trek.",
+      image: "captainslog.png",
+      link: "https://github.com/toddgoates/captains-log",
+      githubLink: true,
+      technologies: ["HTML5", "JavaScript", "CSS Grid", "Speech Recognition"]
     }
   ];
 
