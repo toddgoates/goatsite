@@ -14,8 +14,7 @@ export class ProjectService {
         "upcoming events. I later built a donation payment processing page using Stripe. " +
         "Several years later, I assisted in migrating the site to a fresh WordPress theme.",
       image: "achf.png",
-      link: "https://www.achildshopefoundation.org",
-      githubLink: false,
+      webLink: "https://www.achildshopefoundation.org",
       technologies: ["Drupal", "Stripe", "LESS", "PHP", "jQuery"]
     },
     {
@@ -26,8 +25,7 @@ export class ProjectService {
         "make transactions online and integrated a newsletter signup with MailChimp. To " +
         "lower hosting costs, I put the new site on AWS and set up automated backups to S3.",
       image: "level212.png",
-      link: "http://level212.com",
-      githubLink: false,
+      webLink: "http://level212.com",
       technologies: ["Wordpress", "MailChimp", "WooCommerce", "AWS", "MySQL"]
     },
     {
@@ -38,8 +36,8 @@ export class ProjectService {
         "PlanetList, and Planet. The user's weight is kept in state and passed down to the children " +
         "components. I'm using prop-types so that props passed to components are type-checked.",
       image: "planetarium.png",
-      link: "https://github.com/toddgoates/pocket-planetarium",
-      githubLink: true,
+      webLink: "https://planetarium.toddgoates.com/",
+      githubLink: "https://github.com/toddgoates/pocket-planetarium",
       technologies: ["React", "prop-types", "Bootstrap"]
     },
     {
@@ -50,8 +48,8 @@ export class ProjectService {
         "loses, and ties are recorded with timestamps. Your wins are graphed with Chart.js. Players " +
         "have the option to save progress and keep gameplay data in local storage.",
       image: "rockpaperscissors.png",
-      link: "https://github.com/toddgoates/rockpaperscissors",
-      githubLink: true,
+      webLink: "https://rps.toddgoates.com/",
+      githubLink: "https://github.com/toddgoates/rockpaperscissors",
       technologies: ["Vue.js", "Moment.js", "Chart.js", "Local Storage", "Bootstrap"]
     },
     {
@@ -62,8 +60,8 @@ export class ProjectService {
         "and transcribe your words in real time. I used CSS Grid to build the layout and some custom CSS " +
         "to mimic the appearance of the Captain's Log on Star Trek.",
       image: "captainslog.png",
-      link: "https://github.com/toddgoates/captains-log",
-      githubLink: true,
+      webLink: "https://captainslog.toddgoates.com/",
+      githubLink: "https://github.com/toddgoates/captains-log",
       technologies: ["HTML5", "JavaScript", "CSS Grid", "Speech Recognition"]
     }
   ];

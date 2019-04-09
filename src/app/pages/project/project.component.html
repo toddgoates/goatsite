@@ -4,7 +4,7 @@
   <div class="row">
     <div class="col-lg-6" *ngFor="let project of projects">
       <div class="card">
-        <a href="{{ project.link }}" target="_blank">
+        <a href="{{ project.webLink }}" target="_blank">
           <img src="/assets/images/projects/{{ project.image }}" class="card-img-top" />
         </a>
         <div class="card-body">
@@ -15,9 +15,13 @@
             {{ tech }}
           </span>
           <hr />
-          <a href="{{ project.link }}" target="_blank" class="btn btn-success">
+          <a href="{{ project.webLink }}" target="_blank" class="btn btn-success" *ngIf="project.webLink">
             <i class="fas fa-share-square"></i>
-            <span>{{ project.githubLink ? "View Code" : "View Site" }}</span>
+            View Site
+          </a>
+          <a href="{{ project.githubLink }}" target="_blank" class="btn btn-light" *ngIf="project.githubLink">
+            <i class="far fa-file-code"></i>
+            View Code
           </a>
         </div>
       </div>
