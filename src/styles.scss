@@ -1,3 +1,9 @@
+// NProgress
+@import "~nprogress/nprogress.css";
+
+// Override NProgress Colors
+@import "scss/loader";
+
 // Extends and Customizes Bootstrap
 @import "scss/variables";
 @import "scss/buttons";

@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { Router, Event, NavigationEnd } from "@angular/router";
+import { Router, Event, NavigationStart, NavigationEnd } from "@angular/router";
+import NProgress from "nprogress";
 
 @Component({
   selector: "app-navbar",
@@ -16,7 +17,13 @@ export class NavbarComponent implements OnInit {
 
     // Collapse navbar and change view on route change
     this.router.events.subscribe((event: Event) => {
+      if (event instanceof NavigationStart) {
+        NProgress.start();
+      }
+
       if (event instanceof NavigationEnd) {
+        NProgress.done();
+
         this.isCollapsed = true;
 
         // For logging page views with Google Analytics
