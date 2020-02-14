@@ -25,10 +25,6 @@ export class NavbarComponent implements OnInit {
         NProgress.done();
 
         this.isCollapsed = true;
-
-        // For logging page views with Google Analytics
-        (<any>window).ga("set", "page", event.urlAfterRedirects);
-        (<any>window).ga("send", "pageview");
       }
     });
   }
