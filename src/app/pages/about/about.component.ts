@@ -24,7 +24,7 @@ export class AboutComponent implements OnInit {
       {
         company: "A Child's Hope Foundation",
         title: "Web Developer Volunteer",
-        years: "2013 - Present"
+        years: "2013"
       }
     ];
   }
