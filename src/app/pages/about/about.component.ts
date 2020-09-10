@@ -18,8 +18,13 @@ export class AboutComponent implements OnInit {
     this.workExp = [
       {
         company: "Q90 Corporation",
+        title: "VP of Development",
+        years: "2019 - Present"
+      },
+      {
+        company: "Q90 Corporation",
         title: "Software Engineer",
-        years: "2014 - Present"
+        years: "2014 - 2019"
       },
       {
         company: "A Child's Hope Foundation",
