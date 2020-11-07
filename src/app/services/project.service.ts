@@ -18,17 +18,6 @@ export class ProjectService {
       technologies: ["Drupal", "Stripe", "LESS", "PHP", "jQuery"]
     },
     {
-      name: "Level 212 Fitness",
-      description:
-        "I brought Level 212 to the next level by setting up a new WordPress " +
-        "installation with a modern, responsive theme. I set up WooCommerce to be able to " +
-        "make transactions online and integrated a newsletter signup with MailChimp. To " +
-        "lower hosting costs, I put the new site on AWS and set up automated backups to S3.",
-      image: "level212.png",
-      webLink: "http://level212.com",
-      technologies: ["Wordpress", "MailChimp", "WooCommerce", "AWS", "MySQL"]
-    },
-    {
       name: "Pocket Planetarium",
       description:
         "A fun project built with React to see how much you would weigh on different " +
