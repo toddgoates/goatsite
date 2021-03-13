@@ -26,7 +26,7 @@ export class ProjectService {
         "components. I'm using styled components for scoping CSS.",
       image: "planetarium.png",
       webLink: "https://planetarium.toddgoates.com/",
-      githubLink: "https://github.com/toddgoates/pocket-planetarium",
+      githubLink: "https://github.com/toddgoates/react-planetarium",
       technologies: ["React", "Styled Components"]
     },
     {
