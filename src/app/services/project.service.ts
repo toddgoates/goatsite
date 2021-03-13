@@ -22,12 +22,12 @@ export class ProjectService {
       description:
         "A fun project built with React to see how much you would weigh on different " +
         "planets in the solar system. The application uses several small components: WeightForm, " +
-        "PlanetList, and Planet. The user's weight is kept in state and passed down to the children " +
-        "components. I'm using prop-types so that props passed to components are type-checked.",
+        "PlanetList, and Planet. The user's weight is kept in context and passed to sibling " +
+        "components. I'm using styled components for scoping CSS.",
       image: "planetarium.png",
       webLink: "https://planetarium.toddgoates.com/",
       githubLink: "https://github.com/toddgoates/pocket-planetarium",
-      technologies: ["React", "prop-types", "Bootstrap"]
+      technologies: ["React", "Styled Components"]
     },
     {
       name: "rock paper scissors",
