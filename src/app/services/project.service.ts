@@ -7,6 +7,17 @@ import { Project } from "./../models/project";
 export class ProjectService {
   projects: Project[] = [
     {
+      name: "North Texas Process Server",
+      description:
+        "This is a website I built for my father-in-law's business in Denton, Texas. " +
+        "The site was built with SvelteKit, Typescript, Tailwind CSS, and a serverless function " +
+        "for sending an email from the contact form via MailGun. I later added a payments page " +
+        "using Stripe. It is hosted on Vercel for fast builds and automated deployments.",
+      image: "notxps.PNG",
+      webLink: "https://www.northtexasprocessserver.com",
+      technologies: ["SvelteKit", "TailwindCSS", "Typescript", "MailGun", "Vercel", "Stripe"]
+    },
+    {
       name: "A Child's Hope Foundation",
       description:
         "I helped redesign an outdated, static site into a responsive Drupal " +
